@@ -10,7 +10,7 @@ $(document).ready(function() {
 			try {
 				$.ajax({
 					type: "GET",
-					url: "http://localhost:3000/HourList201403.csv",
+					url: "HourList201403.csv",
 					dataType: "text",
 					success: function(data) { 
 								readData(data, selector); 
