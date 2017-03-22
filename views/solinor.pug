@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>SolinorPähkinä</title>
+	<script src="http://localhost:3000/javascripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="http://localhost:3000/javascripts/solinorReadWrite.js" type="text/javascript"></script>
+	<script src="http://localhost:3000/javascripts/moment.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/solinorStyle.css"></link>
+
+	</head>
+	<body>
+		<div class="jumbotron">
+			<p id="errormsg"></p>
+			<h2 class="text-center">Work Hour Data</h1>
+		</div>
+			<div id="tables" class="container">
+				<div id="scottS" class="col-md-4">
+					<div class="nameTotal"></div>
+						<div class="infoField">
+							<h4 class="text-center">Scott Scala</h4>
+							<button class="btn btn-default">Calculate Wages!</button>
+							<button class="btn btn-default hideBtn" style="display:none;">Hide Table</button>
+							<table id="workHourRecordsScott" class="table table-condensed">
+								<tr>
+									<th id="name">Name</th>
+									<th id="ID">ID</th>
+									<th id="date">Date</th>
+									<th id="startTime">Starting Time</th>
+									<th id="endTime">Ending Time</th>
+									<th id="totalWage">Total Daily Wage</th>
+								</tr>
+							</table>
+						</div>
+				</div>
+				<div id="janetJ" class="col-md-4">
+					<div class="nameTotal"></div>
+						<div class="infoField">
+							<h4 class="text-center">Janet Java</h4>
+							<button class="btn btn-default">Calculate Wages!</button>
+							<button class="btn btn-default hideBtn" style="display:none;">Hide Table</button>
+							<table id="workHourRecordsJanet" class="table table-condensed">
+								<tr>
+									<th id="name">Name</th>
+									<th id="ID">ID</th>
+									<th id="date">Date</th>
+									<th id="startTime">Starting Time</th>
+									<th id="endTime">Ending Time</th>
+									<th id="totalWage">Total Daily Wage</th>
+								</tr>
+							</table>
+						</div>
+				</div>
+				<div id="larryL" class="col-md-4">
+					<div class="nameTotal"></div>
+						<div class="infoField">
+							<h4 class="text-center">Larry Lolcode</h4>
+							<button class="btn btn-default">Calculate Wages!</button>
+							<button class="btn btn-default hideBtn" style="display:none;">Hide Table</button>
+							<table id="workHourRecordsLarry" class="table table-condensed">
+								<tr>
+									<th id="name">Name</th>
+									<th id="ID">ID</th>
+									<th id="date">Date</th>
+									<th id="startTime">Starting Time</th>
+									<th id="endTime">Ending Time</th>
+									<th id="totalWage">Total Daily Wage</th>
+								</tr>
+							</table>
+						</div>
+				</div>
+			</div>
+	</body>
+
+
+</html>

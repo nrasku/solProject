@@ -1,0 +1,6 @@
+{
+  "name": "Solinor Project",
+  "description": "Simple Wage Calculation",
+  "repository": "https://github.com/nrasku/solProject.git",
+  "keywords": ["node", "express", "static"]
+}
