@@ -173,7 +173,10 @@ function overtime(diff) {
 	var minutes = over * 60;
 	var hours = Math.floor(over);
 	minutes %= 60;
-	var time = hours + '' + minutes;
+	var timeDate = new Date(0, 0, 0, hours, minutes, 0);
+	console.log(timeDate.getHours() + ' - ' + timeDate.getMinutes());
+	var twoH = new Date(0, 0, 0, 2, 0, 0);
+	var fourH = new Date(0, 0, 0, 4, 0, 0);
 	var overpay = 0;
 	var start = new Date(0, 0, 0, 0, 0, 0);
 	var end = new Date(0, 0, 0, hours, minutes, 0);
@@ -181,12 +184,12 @@ function overtime(diff) {
 		var mins = date.get('minutes');
 		mins = (mins < 10 ? '0' : '') + mins;
 		time = date.get('hours') + '' + mins;
-		if (time < 200) {
-		    overpay += (3.75 + (3.75 * 0.25));
-		}else if (time > 200 && time < 400) {
-			overpay += (3.75 + (3.75 * 0.50));
+		if (date <= twoH) {
+		    overpay += (3.75 * 0.25);
+		}else if (date > twoH && time <= fourH) {
+			overpay += (3.75 * 0.50);
 		}else {
-			overpay += (3.75 + (3.75 * 1));
+			overpay += (3.75 * 1);
 		}
 	}
 	overpay /= 60;
