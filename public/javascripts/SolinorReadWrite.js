@@ -80,7 +80,7 @@ function calc(lines) {
 			var diff = difference(data[3], data[4]);
 			var evening = eveningCompensation(data[3], data[4], diff);
 			var wage = calcWage(diff);
-			var eveningComp = evening * 3,75 * 1.15;
+			var eveningComp = evening * 1.15;
 			var overComp = overtime(diff);
 			var dailyWage = wage + eveningComp + overComp;
 			dailyWages.push(dailyWage.toFixed(2));
